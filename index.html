@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <meta name="description" content="A music player">
+    <meta name="author" content="Da In Park">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body onload="loop()">
+    <div id="musicPlayer">
+        <div id="playerHeader">
+            <div id="box1">
+            </div>
+            <img src="./img/hamburger.png" id="hamburger" alt="hamburger">
+            <span>Now Playing</span>
+            <div id=box2></div>
+            <img src="./img/favorite.png" id="favorite" alt="favorite">
+        </div>
+        <div class="imageContainer">
+        </div>
+        <div id="disc-image">
+            <img src="./img/disc1.png" class="active" id="disc" />
+        </div>
+        <img class="tonearm" src="./img/tonearm.png" />
+        <p id="currentTitle"></p>
+        <p id="currentName"></p>
+        <audio id="player" controls="" autoplay muted></audio>
+        <img id="next" onclick=nextAndPrev(1) src="./img/next.png" />
+        <img id="prev" onclick=nextAndPrev(-1) src="./img/previous.png">
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
